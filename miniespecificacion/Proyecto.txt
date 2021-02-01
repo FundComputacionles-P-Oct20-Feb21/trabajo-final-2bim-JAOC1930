@@ -1,0 +1,197 @@
+1_ Inicio
+2_ Funcion pincipal
+3_ 	Bandera, b[0, n] <-- true
+4_ 	opcion, i[0, n]
+5_	salida, x(200)[{1-9},{a-z},{A-Z}, {/}]
+6_	contador, i[0, n] <-- 0
+7_	Mientras (Bandera == true) entonces
+8_		Escribir "Ingrese 1 para crear una cuenta de Facebook"
+			+ "Ingrese 2 para crear una cuenta en Twitter"
+			+ "Ingrese 3 para crear una cuenta en Whatsapp"
+			+ "Ingrese 4 para crear una cuenta en Telegram"
+			+ "Ingrese 5 para crear una cuenta en Signal"
+			+ "Ingrese 6 para crear una cuenta en Instagram"
+			+ "Ingrese 7 para crear una cuenta en Flickr"
+9_		Leer opcion
+10_		Si (opcion == 1) entonces
+11_			crearFacebook()
+12_		De lo contario
+13_			Si (opcion == 2) entonces
+14_				crearTwitter()
+15_			De lo contrario
+16_				Si (opcion == 3) entonces
+17_					crearWhatsapp()
+18_				De lo contrario
+19_					Si (opcion == 4) entonces
+20_						crearTelegram()
+21_					De lo contrario
+22_						Si (opcion == 5) entonces
+23_							crearSignal()
+24_						De lo contrario
+25_							Si (opcion == 6) entonces
+26_								crearInstagram()
+27_							De lo contrario
+28_								Si (opcion == 7) entonces
+29_									crearFlickr()
+30_								De lo contario
+31_									Escribir "La opcion es incorrecta"
+32_								Fin si
+33_							Fin si
+34_						Fin si
+35_					Fin si
+36_				Fin si
+37_			Fin si
+38_		Fin si
+39_		contador <-- contador + 1
+40_		Escribir "Ponga si para dejar de crear cuentas"
+41_		Leer salida
+42_		Si (salida == "si") entonces
+43_			Bandera <-- false
+44_		Fin si
+45_	Fin Mientras
+46_	obtenerMensaje(contador)
+47_ Fin funcion principal
+48_ Funcion crearFacebook
+49_	usuario, x(200)[{1-9},{a-z},{A-Z}, {/}]
+50_	edad, i[0, n]
+51_	ciudad, x(200)[{1-9},{a-z},{A-Z}, {/}]
+52_	pais, x(200)[{1-9},{a-z},{A-Z}, {/}]
+53_	correo, x(200)[{1-9},{a-z},{A-Z}, {/}]
+54_	Escribir "Ingrese el nombre de usuario"
+55_	Leer usuario
+56_	Escribir "Ingrese la edad"
+57_	Leer edad
+58_	Escribir "Ingrese el nombre de su Ciudad"
+59_	Leer ciudad
+60_	Escribir "Ingrese el nombre de su pais"
+61_	Leer pais
+62_	Escribir "Ingrese su correo electronico"
+63_	Leer correo
+64_ Fin funcion crearFacebook
+65_ Funcion crearTwitter
+66_	usuario, x(200)[{1-9},{a-z},{A-Z}, {/}]
+67_	nombre, x(200)[{1-9},{a-z},{A-Z}, {/}]
+68_	apellido, x(200)[{1-9},{a-z},{A-Z}, {/}]
+69_	edad, i[0, n]
+70_	ciudad, x(200)[{1-9},{a-z},{A-Z}, {/}]
+71_	pais, x(200)[{1-9},{a-z},{A-Z}, {/}]
+72_	idioma, x(200)[{1-9},{a-z},{A-Z}, {/}]
+73_	correo, x(200)[{1-9},{a-z},{A-Z}, {/}]
+74_	Escribir "Ingrese el nombre de usuario"
+75_	Leer usuario
+76_	Escribir "Ingrese sus nombres"
+77_	Leer nombre
+78_	Escribir "Ingrese sus apellidos"
+79_	Leer apellido
+80_	Escribir "Ingrese la edad"
+81_	Leer edad
+82_	Escribir "Ingrese el nombre de su Ciudad"
+83_	Leer ciudad
+84_	Escribir "Ingrese el nombre de su pais"
+85_	Leer pais
+86_	Escribir "Ingrese el idioma"
+87_	Leer idioma
+88_	Escribir "Ingrese su correo electronico"
+89_	Leer correo
+90_ Fin funcion crearTwitter
+91_ Funcion crearWhatsapp
+92_	usuario, x(200)[{1-9},{a-z},{A-Z}, {/}]
+93_	numero, i[0, n]
+94_	edad, i[0, n]
+95_	ciudad, x(200)[{1-9},{a-z},{A-Z}, {/}]
+96_	pais, x(200)[{1-9},{a-z},{A-Z}, {/}]
+97_	Escribir "Ingrese el nombre de usuario"
+98_	Leer usuario
+99_	Escribir "Ingrese numero de teléfono"
+100_	Leer numero
+101_	Escribir "Ingrese la edad"
+102_	Leer edad
+103_	Escribir "Ingrese el nombre de su Ciudad"
+104_	Leer ciudad
+105_	Escribir "Ingrese el nombre de su pais"
+106_	Leer pais
+107_ Fin funcion crearWhatsapp
+108_ Funcion crearTelegram
+109_	usuario, x(200)[{1-9},{a-z},{A-Z}, {/}]
+110_	numero, i[0, n]
+112_	ciudad, x(200)[{1-9},{a-z},{A-Z}, {/}]
+113_	pais, x(200)[{1-9},{a-z},{A-Z}, {/}]
+114_	area, x(200)[{1-9},{a-z},{A-Z}, {/}]
+115_	Escribir "Ingrese el nombre de usuario"
+116_	Leer usuario
+117_	Escribir "Ingrese numero de teléfono"
+118_	Leer numero
+119_	Escribir "Ingrese el nombre de su Ciudad"
+120_	Leer ciudad
+121_	Escribir "Ingrese el nombre de su pais"
+122_	Leer pais
+123_	Escribir "Ingrese el área de interés"
+124_	Leer area
+125_ Fin funcion crearTelegram
+126_ Funcion crearSignal
+127_	usuario, x(200)[{1-9},{a-z},{A-Z}, {/}]
+128_	numero, i[0, n]
+129_	ciudad, x(200)[{1-9},{a-z},{A-Z}, {/}]
+130_	pais, x(200)[{1-9},{a-z},{A-Z}, {/}]
+131_	hobby, x(200)[{1-9},{a-z},{A-Z}, {/}]
+132_	Escribir "Ingrese el nombre de usuario"
+133_	Leer usuario
+134_	Escribir "Ingrese numero de teléfono"
+135_	Leer numero
+136_	Escribir "Ingrese el nombre de su Ciudad"
+137_	Leer ciudad
+138_	Escribir "Ingrese el nombre de su pais"
+139_	Leer pais
+140_	Escribir "Ingrese su hobby principal"
+141_	Leer hobby
+142_ Fin funcion crearSignal
+143_ Funcion crearInstagram
+144_	usuario, x(200)[{1-9},{a-z},{A-Z}, {/}]
+145_	ciudad, x(200)[{1-9},{a-z},{A-Z}, {/}]
+146_	edad, i[0, n]
+147_	correo, x(200)[{1-9},{a-z},{A-Z}, {/}]
+148_	Escribir "Ingrese el nombre de usuario"
+149_	Leer usuario
+150_	Escribir "Ingrese el nombre de su Ciudad"
+151_	Leer ciudad
+152_	Escribir "Ingrese la edad"
+153_	Leer edad
+154_	Escribir "Ingrese su correo electronico"
+155_	Leer correo
+156_ Fin funcion crearInstagram
+157_ Funcion crearFlickr
+158_	usuario, x(200)[{1-9},{a-z},{A-Z}, {/}]
+159_	correo, x(200)[{1-9},{a-z},{A-Z}, {/}]
+160_	Escribir "Ingrese el nombre de usuario"
+161_	Leer usuario
+162_	Escribir "Ingrese su correo electronico"
+163_	Leer correo
+164_ Fin funcion crearFlickr
+165_ Funcion obtenerMensaje(i, nCuentas)
+166_	mensajeFinal(3),x(300)[{a-z}, {A-Z}, {BS}]
+167_	mensajeFinal <-- {"Campaña con poca afluencia", "Campaña moderada siga adelante", "Excelente campaña"}
+168_	Si ((nCuentas >= 1) AND (nCuentas <= 5)) entonces
+169_		Escribir mensajeFinal[0]
+170_	De lo contrario
+171_		 Si ((nCuentas >= 6) AND (nCuentas <= 15)) entonces
+172_			Escribir mensajeFinal[1]
+173_		De lo contrario
+174_			Si (nCuentas >= 16) entonces
+175_				Escribir mensajeFinal[2]
+176_			Fin si
+177_		Fin si
+178_	Fin si
+179_ Fin funcion obtenerMensaje
+180_ Fin
+
+
+
+
+
+
+
+
+
+
+
+			
