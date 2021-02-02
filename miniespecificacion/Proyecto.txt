@@ -51,7 +51,7 @@
 45_	Fin Mientras
 46_	obtenerMensaje(contador)
 47_ Fin funcion principal
-48_ Funcion crearFacebook
+48_ Funcion crearFacebook()
 49_	usuario, x(200)[{1-9},{a-z},{A-Z}, {/}]
 50_	edad, i[0, n]
 51_	ciudad, x(200)[{1-9},{a-z},{A-Z}, {/}]
@@ -68,7 +68,7 @@
 62_	Escribir "Ingrese su correo electronico"
 63_	Leer correo
 64_ Fin funcion crearFacebook
-65_ Funcion crearTwitter
+65_ Funcion crearTwitter()
 66_	usuario, x(200)[{1-9},{a-z},{A-Z}, {/}]
 67_	nombre, x(200)[{1-9},{a-z},{A-Z}, {/}]
 68_	apellido, x(200)[{1-9},{a-z},{A-Z}, {/}]
@@ -94,7 +94,7 @@
 88_	Escribir "Ingrese su correo electronico"
 89_	Leer correo
 90_ Fin funcion crearTwitter
-91_ Funcion crearWhatsapp
+91_ Funcion crearWhatsapp()
 92_	usuario, x(200)[{1-9},{a-z},{A-Z}, {/}]
 93_	numero, i[0, n]
 94_	edad, i[0, n]
@@ -111,7 +111,7 @@
 105_	Escribir "Ingrese el nombre de su pais"
 106_	Leer pais
 107_ Fin funcion crearWhatsapp
-108_ Funcion crearTelegram
+108_ Funcion crearTelegram()
 109_	usuario, x(200)[{1-9},{a-z},{A-Z}, {/}]
 110_	numero, i[0, n]
 112_	ciudad, x(200)[{1-9},{a-z},{A-Z}, {/}]
@@ -128,7 +128,7 @@
 123_	Escribir "Ingrese el área de interés"
 124_	Leer area
 125_ Fin funcion crearTelegram
-126_ Funcion crearSignal
+126_ Funcion crearSignal()
 127_	usuario, x(200)[{1-9},{a-z},{A-Z}, {/}]
 128_	numero, i[0, n]
 129_	ciudad, x(200)[{1-9},{a-z},{A-Z}, {/}]
@@ -145,7 +145,7 @@
 140_	Escribir "Ingrese su hobby principal"
 141_	Leer hobby
 142_ Fin funcion crearSignal
-143_ Funcion crearInstagram
+143_ Funcion crearInstagram()
 144_	usuario, x(200)[{1-9},{a-z},{A-Z}, {/}]
 145_	ciudad, x(200)[{1-9},{a-z},{A-Z}, {/}]
 146_	edad, i[0, n]
@@ -159,7 +159,7 @@
 154_	Escribir "Ingrese su correo electronico"
 155_	Leer correo
 156_ Fin funcion crearInstagram
-157_ Funcion crearFlickr
+157_ Funcion crearFlickr()
 158_	usuario, x(200)[{1-9},{a-z},{A-Z}, {/}]
 159_	correo, x(200)[{1-9},{a-z},{A-Z}, {/}]
 160_	Escribir "Ingrese el nombre de usuario"
