@@ -1,9 +1,10 @@
 1_ Inicio
 2_ Funcion pincipal
-3_ 	Bandera, b[0, n] <-- true
+3_ 	bandera, b[0, n] <-- true
 4_ 	opcion, i[0, n]
 5_	salida, x(200)[{1-9},{a-z},{A-Z}, {/}]
 6_	contador, i[0, n] <-- 0
+7_	cadena, x(200)[{1-9},{a-z},{A-Z}, {/}]
 7_	Mientras (Bandera == true) entonces
 8_		Escribir "Ingrese 1 para crear una cuenta de Facebook"
 			+ "Ingrese 2 para crear una cuenta en Twitter"
@@ -42,14 +43,17 @@
 36_				Fin si
 37_			Fin si
 38_		Fin si
-39_		contador <-- contador + 1
+39_		Si((opcion >= 1) AND (opcion <= 7)) entonces
+39_			contador <-- contador + 1
+41_		Fin si
 40_		Escribir "Ponga si para dejar de crear cuentas"
 41_		Leer salida
 42_		Si (salida == "si") entonces
-43_			Bandera <-- false
+43_			bandera <-- false
 44_		Fin si
 45_	Fin Mientras
-46_	obtenerMensaje(contador)
+46_	cadena <-- obtenerMensaje(contador)
+46_	Escribir cadena
 47_ Fin funcion principal
 48_ Funcion crearFacebook()
 49_	usuario, x(200)[{1-9},{a-z},{A-Z}, {/}]
@@ -170,17 +174,19 @@
 165_ Funcion obtenerMensaje(i, nCuentas)
 166_	mensajeFinal(3),x(300)[{a-z}, {A-Z}, {BS}]
 167_	mensajeFinal <-- {"Campaña con poca afluencia", "Campaña moderada siga adelante", "Excelente campaña"}
+168_	cadena, x(200)[{1-9},{a-z},{A-Z}, {/}]
 168_	Si ((nCuentas >= 1) AND (nCuentas <= 5)) entonces
-169_		Escribir mensajeFinal[0]
+169_		cadena <-- Escribir mensajeFinal[0]
 170_	De lo contrario
 171_		 Si ((nCuentas >= 6) AND (nCuentas <= 15)) entonces
-172_			Escribir mensajeFinal[1]
+172_			cadena <-- Escribir mensajeFinal[1]
 173_		De lo contrario
 174_			Si (nCuentas >= 16) entonces
-175_				Escribir mensajeFinal[2]
+175_				cadena <-- Escribir mensajeFinal[2]
 176_			Fin si
 177_		Fin si
 178_	Fin si
+179_	return cadena
 179_ Fin funcion obtenerMensaje
 180_ Fin
 
